@@ -1,0 +1,8 @@
+<h1>Here are the awesome quotes!</h1>
+
+@foreach(var quote in @ViewBag.allQuotes)
+{
+    <h3>"@quote["content"]"</h3>
+    <h4 class="quoteinfo">-@quote["username"] at @quote["created_at"].ToString("h:mm tt MMMM dd, yyyy")</h4>
+    <hr>
+}
